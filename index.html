@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Quiz Master</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-graduation-cap"></i> Academic Quiz Master</h1>
+            <div class="user-info">
+                <div class="user-score">
+                    <span>Score: </span><span id="score">0</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progress-bar"></div>
+                    <span id="progress-text">0/0</span>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div id="start-screen" class="screen active">
+                <h2>Welcome to Academic Quiz Master</h2>
+                <p>Test your knowledge with our academic quiz!</p>
+                <div class="form-group">
+                    <input type="text" id="username" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <select id="subject" class="form-control">
+                        <option value="">Select a subject</option>
+                        <option value="math">Mathematics</option>
+                        <option value="science">Science</option>
+                        <option value="history">History</option>
+                        <option value="geography">Geography</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select id="difficulty" class="form-control">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+                <button id="start-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+            <div id="quiz-screen" class="screen">
+                <div class="question-container">
+                    <div class="question-header">
+                        <span id="question-number">Question 1</span>
+                        <span id="timer">Time: <span id="time">30</span>s</span>
+                    </div>
+                    <h2 id="question-text">Loading question...</h2>
+                    <div id="options-container" class="options-container">
+                        <!-- Options will be added dynamically -->
+                    </div>
+                    <div class="navigation-buttons">
+                        <button id="prev-btn" class="btn btn-secondary">Previous</button>
+                        <button id="next-btn" class="btn btn-primary">Next</button>
+                        <button id="submit-btn" class="btn btn-success">Submit Quiz</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="results-screen" class="screen">
+                <h2>Quiz Completed!</h2>
+                <div class="results-summary">
+                    <div class="result-item">
+                        <span class="result-label">Your Score:</span>
+                        <span id="final-score" class="result-value">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Correct Answers:</span>
+                        <span id="correct-answers">0</span>/<span id="total-questions">0</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="result-label">Time Taken:</span>
+                        <span id="time-taken">0:00</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="retry-btn" class="btn btn-primary">Try Again</button>
+                    <button id="new-quiz-btn" class="btn btn-secondary">New Quiz</button>
+                    <button id="save-score-btn" class="btn btn-success">Save Score</button>
+                </div>
+                <div id="scores-container" class="scores-container">
+                    <h3>Your Previous Scores</h3>
+                    <ul id="scores-list">
+                        <!-- Scores will be added dynamically -->
+                    </ul>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Academic Quiz Master | Created with ❤️ for learning</p>
+        </footer>
+    </div>
+
+    <script src="quiz.js"></script>
+                    <div id="best-score">0</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="game-intro">
+            <p>Join the tiles, get to <strong>2048!</strong></p>
+            <button id="new-game-btn">New Game</button>
+        </div>
+        
+        <div class="game-container">
+            <div class="grid-container">
+                <!-- Grid cells will be generated by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="game-over" id="game-over">
+            <h2>Game Over!</h2>
+            <p>Your score: <span id="final-score">0</span></p>
+            <button id="try-again-btn">Try Again</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
