@@ -268,7 +268,6 @@ function getResultMessage() {
     }
 }
 
-
 // Initialize the quiz when the page loads
 document.addEventListener('DOMContentLoaded', () => {
     try {
@@ -312,3 +311,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.error('Error initializing quiz:', error);
     }
 });
+
