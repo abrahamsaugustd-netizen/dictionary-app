@@ -1,3 +1,3 @@
-# What You Know
+# What Do You Know
 
-A fun and engaging quiz application that tests your knowledge across various subjects.
+A web-based quiz application with multiple choice questions across various subjects.
