@@ -1,3 +1,3 @@
-# Academic Quiz Master
+# What You Know
 
-A web-based quiz application with multiple choice questions across various subjects.
+A fun and engaging quiz application that tests your knowledge across various subjects.
